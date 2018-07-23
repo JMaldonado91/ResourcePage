@@ -1,0 +1,26 @@
+
+/* Base Styles -------------------- */
+
+  h2 {
+    color: #878787;
+    margin: 0;
+    font: 2em sans-serif;
+  }
+
+  .list-group-item {
+    color: #878787;
+  }
+
+  .a[href^="https"] {
+    color: blue;
+  }
+
+  div p {
+    color: black;
+  }
+
+  p ~ ul {
+    color: white;
+  }
+
+  
