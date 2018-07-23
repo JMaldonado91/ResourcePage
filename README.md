@@ -12,7 +12,7 @@ Consumer Care agents will use this site to locate helpful quick links and up-to-
 
 ## Custom Javascript function I created for feedback form:
 1. function confirmInput() {
-  alert("Hello " + name + "! Thank you for your feedback!");
+  alert("Hello" + "! Thank you for your feedback!");
   }
 
 a. When the user clicks on the Submit button after completing the feedback form, they will get the alert message shown above.
