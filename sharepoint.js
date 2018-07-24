@@ -1,5 +1,6 @@
+/* Once user clicks on Submit, alert pops up -------------------- */
 function confirmInput() {
-alert("Hello" + "name" + "! Thank you for your feedback!");
+alert("Hello" + "! Thank you for your feedback!");
 }
 
 
