@@ -42,3 +42,9 @@ p {
   word-wrap: break-word;
 
 }
+.tipandtrick {
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  max-height: 200px;
+}
