@@ -17,7 +17,7 @@
 
   <script type: text/javascript script src= sharepoint.js></script>
   <form onsubmit="confirmInput()" action="https://github.com/JMaldonado91/ResourcePage/SharePoint.html">
-    Enter your name: <input id="fname" type="text" size="20">
+
     <input type="submit">
     </form>
     
@@ -51,6 +51,61 @@
     </div>
   </div><!-- /Header -->
   
+    <!-- Styles Kudos News Banner-->	
+<style>
+.example1 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.example1 h4 {
+ font-size: 1em;
+ color: red;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ 
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: example1 15s linear infinite;
+ -webkit-animation: example1 15s linear infinite;
+ animation: example1 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
+<!-- Kudos Message-->	
+<div class="example1">
+<h4>Kudos to Stephanie Bumpus! Consumer emailed: "Stephanie was such a great help with my warranty claim, she guided me through the entire process." </h4>
+</div>
+  <!-- /.kudos -->
+    
   <div class="container pt-4">
     <!-- Communications Corner -->
     <div id="about" class="row">
@@ -123,6 +178,8 @@
           <div class="card-body">
             <h5 class="card-title">TSI Partners with Harvest Time International for Bed Donations Worldwide</h5>
             <p class="card-text">Recent recipients of donated beds include residents of Jamaica and Haiti</p>
+    <a href="https://tempursealyinc.sharepoint.com/TSI_News/Lists/Posts/Post.aspx?ID=109" target="_blank" class="card-link">Read More</a>
+
           </div>
         </div>
         <hr>
@@ -132,6 +189,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Rick Anderson Receives Award from Anti-Defamation League</h5>
                   <p class="card-text">American Heritage Award presented in New York on June 14</p>
+    <a href="https://tempursealyinc.sharepoint.com/TSI_News/Lists/Posts/Post.aspx?ID=112" target="_blank" class="card-link">Read More</a>
+
                 </div>
               </div>          
               <hr>
@@ -140,6 +199,7 @@
                 <div class="card-body">
                   <h5 class="card-title">TSI HQ Employees Support Lexington Humane Society</h5>
                   <p class="card-text">Mutt Strut raises more than $50,000 for the animals</p>
+    <a href="https://tempursealyinc.sharepoint.com/TSI_News/Lists/Posts/Post.aspx?ID=111" target="_blank" class="card-link">Read More</a>
                 </div>
               </div>          
               <hr>
@@ -148,6 +208,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Tempur Sealy Distribution Center Recognized for Philanthropy</h5>
                   <p class="card-text">Phoenix facility recognized with Good360’s 2018 Circle of Good Award</p>
+    <a href="https://tempursealyinc.sharepoint.com/TSI_News/Lists/Posts/Post.aspx?ID=110" target="_blank" class="card-link">Read More</a>
+
                 </div>
               </div>          
               <hr>
@@ -156,6 +218,8 @@
                 <div class="card-body">
                   <h5 class="card-title">Tempur Pedic and Leggett &amp; Platt Make Wish Come True</h5>
                   <p class="card-text">Young cancer patient dreamed of new bed for his birthday</p>
+     <a href="https://tempursealyinc.sharepoint.com/TSI_News/Lists/Posts/Post.aspx?List=8fb5c27e-f539-404e-bf97-f052dfe77f96&amp;ID=113&amp;RootFolder=%2FTSI_News%2FLists%2FPosts&amp;Source=https%3A%2F%2Ftempursealyinc%2Esharepoint%2Ecom%2FSitePages%2FTSI%2520Intranet%2Easpx&amp;Web=227924be-4efc-4df3-9076-775e5fb89410" target="_blank"  class="card-link">Read More</a>
+
                 </div>
               </div>          
               </div>
@@ -178,16 +242,16 @@
                       <div class="card-body">
                       </div>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Kirstyn Fagnani 7/3</li>
-                        <li class="list-group-item">Daniel Earp 7/7</li>
-                        <li class="list-group-item">Angela Freeman 7/12</li>
-                        <li class="list-group-item">Eric Bayes 7/17</li>
-                        <li class="list-group-item">James  McGregor 7/18</li>
-                        <li class="list-group-item">Melissa Owens 7/21</li>
-                        <li class="list-group-item">Mark Gruber 7/23</li>
-                        <li class="list-group-item">Kelly Moser 7/26</li>
-                        <li class="list-group-item">Doris Bennett 7/27</li>
-                        <li class="list-group-item">Gary DeRossitt 7/27</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Tempur Consumer Care')" onmouseout="changeText(this, 'Kirstyn Fagnani 7/3')">Kirstyn Fagnani 7/3</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Learning &amp; Development')" onmouseout="changeText(this, 'Daniel Earp 7/7')">Daniel Earp 7/7</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Executive Services')" onmouseout="changeText(this, 'Angela Freeman 7/12')">Angela Freeman 7/12</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Learning &amp; Development')" onmouseout="changeText(this, 'Eric Bayes 7/17')">Eric Bayes 7/17</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care Support')" onmouseout="changeText(this, 'James  McGregor 7/18')">James  McGregor 7/18</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care Support')" onmouseout="changeText(this, 'Melissa Owens 7/21')">Melissa Owens 7/21</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Tempur Consumer Care')" onmouseout="changeText(this, 'Mark Gruber 7/23')">Mark Gruber 7/23</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care Support')" onmouseout="changeText(this, 'Kelly Moser 7/26')">Kelly Moser 7/26</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Sealy Consumer Care')" onmouseout="changeText(this, 'Doris Bennett 7/27')">Doris Bennett 7/27</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care Support')" onmouseout="changeText(this, 'Gary DeRossitt 7/27')">Gary DeRossitt 7/27</li>
                       </ul>
                     </div>
                   
@@ -201,21 +265,21 @@
                       <div class="card-body">
                       </div>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">John Stith 07/01/2013</li>
-                        <li class="list-group-item">Mark Gruber 07/05/2011</li>
-                        <li class="list-group-item">Carrenthia Lindsay 07/10/2017</li>
-                        <li class="list-group-item">Charles Stewart 07/10/2017</li>
-                        <li class="list-group-item">Daniel  Reid 07/10/2017</li>
-                        <li class="list-group-item">Jessica Williams 07/10/2017</li>
-                        <li class="list-group-item">Kelly Herndon 07/10/2017</li>
-                        <li class="list-group-item">Kevin McElroy 07/10/2017</li>
-                        <li class="list-group-item">Nickie Morrison 07/10/2017</li>
-                        <li class="list-group-item">Toniea Jones 07/10/2017</li>
-                        <li class="list-group-item">Tonya McCray 07/10/2017</li>
-                        <li class="list-group-item">Bridget Young 07/10/2003</li>
-                        <li class="list-group-item">Ebone  Baker 07/11/2016</li>
-                        <li class="list-group-item">Jessica Burnett 07/21/2017</li>
-                        <li class="list-group-item">Marlene Castillo 07/31/2006</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care Support')" onmouseout="changeText(this, 'John Stith 07/01/2013')">John Stith 07/01/2013</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Tempur Consumer Care')" onmouseout="changeText(this, 'Mark Gruber 07/05/2011')">Mark Gruber 07/05/2011</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Sealy Consumer Care')" onmouseout="changeText(this, 'Carrenthia Lindsay 07/10/2017')">Carrenthia Lindsay 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Sealy Consumer Care')" onmouseout="changeText(this, 'Charles Stewart 07/10/2017')">Charles Stewart 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Sealy Consumer Care')" onmouseout="changeText(this, 'Daniel  Reid 07/10/2017')">Daniel  Reid 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Sealy Consumer Care')" onmouseout="changeText(this, 'Jessica Williams 07/10/2017')">Jessica Williams 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Sealy Consumer Care')" onmouseout="changeText(this, 'Kelly Herndon 07/10/2017')">Kelly Herndon 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Sealy Consumer Care')" onmouseout="changeText(this, 'Kevin McElroy 07/10/2017')">Kevin McElroy 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Tempur Consumer Care')" onmouseout="changeText(this, 'Nickie Morrison 07/10/2017')">Nickie Morrison 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Tempur Consumer Care')" onmouseout="changeText(this, 'Toniea Jones 07/10/2017')">Toniea Jones 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Tempur Consumer Care')" onmouseout="changeText(this, 'Tonya McCray 07/10/2017')">Tonya McCray 07/10/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care Support')" onmouseout="changeText(this, 'Bridget Young 07/10/2003')">Bridget Young 07/10/2003</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care')" onmouseout="changeText(this, 'Ebone  Baker 07/11/2016')">Ebone  Baker 07/11/2016</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Learning &amp; Development')" onmouseout="changeText(this, 'Jessica Burnett 07/21/2017')">Jessica Burnett 07/21/2017</li>
+                        <li class="list-group-item" onmouseover="changeText(this, 'Consumer Care Support')" onmouseout="changeText(this, 'Marlene Castillo 07/31/2006')">Marlene Castillo 07/31/2006</li>
                       </ul>
                     </div>
                   
@@ -230,72 +294,13 @@
 
 
     
-    <!-- footer -->
-   
-<title>Kudos</title>
-
-<!-- Styles -->	
-<style>
-.example1 {
- height: 50px;	
- overflow: hidden;
- position: relative;
-}
-.example1 h4 {
- font-size: 1em;
- color: red;
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- 
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);	
- transform:translateX(100%);
- /* Apply animation to this element */	
- -moz-animation: example1 15s linear infinite;
- -webkit-animation: example1 15s linear infinite;
- animation: example1 15s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes example1 {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes example1 {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes example1 {
- 0%   { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%); 
- }
-}
-</style>
-
-<!-- Kudos -->	
-<div class="example1">
-<h4>Kudos to Stephanie Bumpus! Consumer emailed: "Stephanie was such a great help with my warranty claim, she guided me through the entire process." </h4>
+    <!-- footer -->   
+<div class="col-md text-md-right">
+  <small>&copy; Tempur-Sealy </small>
 </div>
-           
-           
-              
-              <div class="col-md text-md-right">
-                  <small>&copy; Tempur-Sealy </small>
-              </div>
-          </div><!-- /footer -->
+</div><!-- /footer -->
     
-  </div><!-- /.kudos -->
+
 
   <!--=====================================
       FEEDBACK FORM 
